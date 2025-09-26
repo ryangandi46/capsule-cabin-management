@@ -17,8 +17,11 @@ POST /api/units
 PUT /api/units/:id
 
 Rule: Forbid direct "Occupied -> Available" (HTTP 400).
+
+## Konfigurasi .ENV
 DB: PostgreSQL
 Name DB: unitsdb
+DATABASE_URL="postgresql://app:app@localhost:5432/unitsdb?schema=public"
 
 ## Troubleshooting
 Node version error (EBADENGINE)
